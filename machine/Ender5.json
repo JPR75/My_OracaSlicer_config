@@ -5,7 +5,7 @@
     "from": "User",
     "inherits": "MyKlipper 0.4 nozzle",
     "is_custom_defined": "0",
-    "machine_end_gcode": "{if max_layer_z < max_print_height}G1 Z{z_offset+min(max_layer_z+30, max_print_height)} F600 ; Move print bed down{endif}\nG1 X210 Y210 F1000 ; present print\nG91 ;Relative positioning\nG1 E-3 F2700 ;Retract a bit\nM140 S0 ; turn off heatbed\nM104 S0 ; turn off temperature\nM107 ; turn off fan\nM84 X Y E ; disable motors",
+    "machine_end_gcode": "G92 E0  ; reset extruder\nG1 E-3 F2700 ; retract a bit\n{if max_layer_z < max_print_height}G1 Z{z_offset+min(max_layer_z+30, max_print_height)} F600 ; Move print bed down{endif}\nG1 X210 Y210 F1000 ; present print\nM140 S0 ; turn off heatbed\nM104 S0 ; turn off temperature\nM107 ; turn off fan\nM84 X Y E ; disable motors",
     "machine_max_acceleration_extruding": [
         "4000",
         "20000"
@@ -38,7 +38,7 @@
         "60",
         "25"
     ],
-    "machine_start_gcode": "; ------------\n; Custom gcode\nM140 S[first_layer_bed_temperature] ;Start heating bed\nM104 S170; start warming hotend to 170\nM190 S[first_layer_bed_temperature] ;Wait for bed to reach temp before proceeding\n\nG28 ;Home\n;M501 ; Reload last-saved bed leveling\n;M420 S1 ; restaure auto leveling mesh\nBED_MESH_PROFILE LOAD=default\n\nG92 E0 ;Reset Extruder\nG1 Y+220.0 X50.0 F4000.0 ; go outside print area\nM104 S[first_layer_temperature] ;Start heating extruder\nM109 S[first_layer_temperature] ;Wait for extruder to reach temp before proceeding\nG1 Z0.0 F300.0;\nG1 X150 E15.0 F1000.0 ; intro line\nG1 Y+218.0 E15.0 F1000.0 ; intro line\nG1 X100 E15.0 F1000.0 ; intro line\n\nG92 E0 ;Reset Extruder\nG1 Z2.0 F3000 ;Move Z Axis up\n; End custom gcode\n; ------------",
+    "machine_start_gcode": "; ------------\n; Custom gcode\nM140 S[first_layer_bed_temperature] ;Start heating bed\nM104 S170; start warming hotend to 170\nM190 S[first_layer_bed_temperature] ;Wait for bed to reach temp before proceeding\n\nG28 ;Home\n;M501 ; Reload last-saved bed leveling\n;M420 S1 ; restaure auto leveling mesh\nBED_MESH_PROFILE LOAD=default\n\nG92 E0 ;Reset Extruder\nG1 Y+220.0 X-3 F4000.0 ; go outside print area\nM104 S[first_layer_temperature] ;Start heating extruder\nM109 S[first_layer_temperature] ;Wait for extruder to reach temp before proceeding\nG1 E20.0 F1000.0 ; intro line\nG1 Z0.20 F300.0 ; intro line\nG1 X20 E20.0 F1000.0 ; intro line\n\nG92 E0 ; reset Extruder\nG1 Z1.8 F3000 ; move Z Axis up\n; End custom gcode\n; ------------",
     "name": "Ender5",
     "nozzle_type": "brass",
     "printable_area": [
