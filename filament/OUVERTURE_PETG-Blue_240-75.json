@@ -1,0 +1,58 @@
+{
+    "close_fan_the_first_x_layers": [
+        "2"
+    ],
+    "default_filament_colour": [
+        "#0000FF"
+    ],
+    "fan_max_speed": [
+        "60"
+    ],
+    "fan_min_speed": [
+        "10"
+    ],
+    "filament_cost": [
+        "25"
+    ],
+    "filament_settings_id": [
+        "OUVERTURE_PETG-Blue_240-75"
+    ],
+    "filament_type": [
+        "PETG"
+    ],
+    "filament_vendor": [
+        "OUVERTURE"
+    ],
+    "from": "User",
+    "hot_plate_temp": [
+        "75"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "80"
+    ],
+    "inherits": "My Generic PLA",
+    "is_custom_defined": "0",
+    "name": "OUVERTURE_PETG-Blue_240-75",
+    "nozzle_temperature": [
+        "240"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "245"
+    ],
+    "nozzle_temperature_range_high": [
+        "250"
+    ],
+    "nozzle_temperature_range_low": [
+        "220"
+    ],
+    "overhang_fan_threshold": [
+        "25%"
+    ],
+    "reduce_fan_stop_start_freq": [
+        "0"
+    ],
+    "temperature_vitrification": [
+        "55"
+    ],
+    "version": "2.0.2.0"
+}

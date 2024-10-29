@@ -1,0 +1,49 @@
+{
+    "close_fan_the_first_x_layers": [
+        "2"
+    ],
+    "default_filament_colour": [
+        "#FF8000"
+    ],
+    "fan_min_speed": [
+        "0"
+    ],
+    "filament_cost": [
+        "25"
+    ],
+    "filament_settings_id": [
+        "GRATKIT_PLA-Silk_Tricolor_195-50"
+    ],
+    "filament_vendor": [
+        "Eryone"
+    ],
+    "from": "User",
+    "hot_plate_temp": [
+        "50"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "55"
+    ],
+    "inherits": "My Generic PLA",
+    "is_custom_defined": "0",
+    "name": "GRATKIT_PLA-Silk_Tricolor_195-50",
+    "nozzle_temperature": [
+        "195"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "200"
+    ],
+    "nozzle_temperature_range_high": [
+        "210"
+    ],
+    "overhang_fan_threshold": [
+        "25%"
+    ],
+    "reduce_fan_stop_start_freq": [
+        "0"
+    ],
+    "temperature_vitrification": [
+        "55"
+    ],
+    "version": "2.0.2.0"
+}
