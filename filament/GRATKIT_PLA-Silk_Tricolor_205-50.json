@@ -11,6 +11,9 @@
     "filament_cost": [
         "25"
     ],
+    "filament_max_volumetric_speed": [
+        "20"
+    ],
     "filament_settings_id": [
         "GRATKIT_PLA-Silk_Tricolor_205-50"
     ],
@@ -38,6 +41,12 @@
     ],
     "overhang_fan_threshold": [
         "10%"
+    ],
+    "slow_down_layer_time": [
+        "4"
+    ],
+    "slow_down_min_speed": [
+        "70"
     ],
     "temperature_vitrification": [
         "55"

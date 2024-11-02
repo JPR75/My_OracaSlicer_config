@@ -14,6 +14,9 @@
     "filament_cost": [
         "25"
     ],
+    "filament_max_volumetric_speed": [
+        "20"
+    ],
     "filament_settings_id": [
         "ANYCUBE_ASA-Blue_260-95"
     ],
@@ -50,6 +53,12 @@
     ],
     "reduce_fan_stop_start_freq": [
         "0"
+    ],
+    "slow_down_layer_time": [
+        "5"
+    ],
+    "slow_down_min_speed": [
+        "30"
     ],
     "temperature_vitrification": [
         "55"
